@@ -50,25 +50,46 @@ Exemple:
 """
 
 
+shopping_list = [10, 449, 33, 44, 188, 640]
+
 def sum_even_numbers_in_list_while(list_numbers):
     # Write here your code
-    pass
+    i=0
+    suma_pares=0
+    while i < len(shopping_list):
+        if shopping_list[i]%2==0:
+            suma_pares+= shopping_list[i]
+        i+=1
+    return suma_pares 
 
 
 def sum_even_numbers_in_list_for(list_numbers):
     # Write here your code
-    pass
+    suma_pares=0
+    for number in  shopping_list:
+        if number%2==0:
+            suma_pares+= number
+    return suma_pares
 
 
 def sum_even_numbers_in_list_do_while(list_numbers):
     # Write here your code
-    pass
+    suma_pares=0
+    i=0
+    while True: 
+        if shopping_list[i]%2==0:
+          suma_pares+= shopping_list[i]
+        i+=1
+        if i>len(shopping_list)-1:
+          break
+   
+    return suma_pares
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
 # shopping_list = [10, 449, 33, 44, 188, 640]
-# print(sum_even_numbers_in_list_while(shopping_list))
+print(sum_even_numbers_in_list_while(shopping_list))
 # print(sum_even_numbers_in_list_for(shopping_list))
 # print(sum_even_numbers_in_list_do_while(shopping_list))
